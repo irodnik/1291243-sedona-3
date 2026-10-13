@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Новиков](https://up.htmlacademy.ru/htmlcss-individual/3/user/1291243).
-* Наставник: [Ирина Антипина](https://up.htmlacademy.ru/htmlcss-individual/3/user/2108789).
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
