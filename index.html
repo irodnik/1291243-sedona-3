@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <header class="navigation">
+    <header class="navigation" data-test="header">
       <a class="navigation-logo">
         <img class="logo-site" src="#" alt="Логотип гостиниц города «Седона»" width="140" height="70">
       </a>
@@ -42,8 +42,8 @@
       </nav>
     </header>
 
-    <main class="main-index">
-      <section class="hello">
+    <main class="main-index" data-test="main">
+      <section class="hello" data-test="hero">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</h1>
         <img class="main-text" src="#" alt="Welcome to the gorgeous Sedona">
       </section>
@@ -52,7 +52,7 @@
         <p class="adventages-explanation adventages-color">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
          <h2 class="visually-hidden">Преимущества</h2>
          <ul class="advantages-list">
           <li class="advantages-item pictures">
@@ -119,13 +119,13 @@
         </ul>
       </div>
 
-      <section class="ad-search">
+      <section class="ad-search" data-test="search">
         <h2 class="ad-search-name">Заинтересовались?</h2>
         <p class="ad-search-explanation">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="searching-hotels" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
-      <section class="newsletter-main">
+      <section class="newsletter-main" data-test="subscribe">
         <div class="subscribe-block">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-explanation">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -137,7 +137,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="footer-social">
         <h2 class="visually-hidden">Социальные сети: следуйте за нами</h2>
         <uL class="footer-social-list">
