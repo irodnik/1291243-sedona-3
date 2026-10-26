@@ -12,8 +12,8 @@
       </a>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="navigation-item current-link">
-            <a class="nav-list-link">Главная</a>
+          <li class="navigation-item">
+            <a class="nav-list-link current-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="nav-list-link" href="#">О Седоне</a>
@@ -31,19 +31,19 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link-user favorite-icon" href="#">
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">Отелей в избранном:</span>
               <span class="favorite-number">12</span>
             </a>
           </li>
           <li class="navigation-item">
-              <button class="button-desired" type="button">Хочу сюда!</button>
+            <a class="navigation-link-user desired-icon" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-index" data-test="main">
-      <section class="hello" data-test="hero">
+    <main class="main" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</h1>
         <img class="main-text" src="#" alt="Welcome to the gorgeous Sedona">
       </section>
@@ -96,86 +96,68 @@
       <div class="services">
         <ul class="services-list">
           <li class="services-item light-blue">
-            <div class="service-block">
-              <img src="#" alt="Иконка дома">
-              <h4 class="services-name">Жильё</h4>
+              <h3 class="services-name">Жильё</h3>
               <p class="services-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-            </div>
           </li>
           <li class="services-item">
-            <div class="service-block">
-              <img src="#" alt="Иконка пищи">
-              <h4 class="services-name">Еда</h4>
+              <h3 class="services-name">Еда</h3>
               <p class="services-description">Всегда заказывайте<br>топовый фирменный бургер,<br> вы не разочаруетесь!</p>
-            </div>
           </li>
           <li class="services-item light-blue">
-            <div class="service-block">
-              <img src="#" alt="Иконка сувениров">
-              <h4 class="services-name">Сувениры</h4>
+              <h3 class="services-name">Сувениры</h3>
               <p class="services-description">Не только китайского,<br>но и настоящего местного производства!</p>
-            </div>
           </li>
         </ul>
       </div>
 
-      <section class="ad-search" data-test="search">
-        <h2 class="ad-search-name">Заинтересовались?</h2>
-        <p class="ad-search-explanation">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="searching-hotels" href="#">Поиск гостиницы в Седоне</a>
+      <section class="booking" data-test="search">
+        <h2 class="booking-title">Заинтересовались?</h2>
+        <p class="booking-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
       </section>
 
-      <section class="newsletter-main" data-test="subscribe">
-        <div class="subscribe-block">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-explanation">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form class="newsletter-form" action="#" method="post">
-            <input class="newsletter-email" type="email" placeholder="Ваш e-mail">
-            <button class="newsletter-button" type="submit">Подписаться</button>
+      <section class="subscription" data-test="subscribe">
+          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="subscription-email">введите Ваш e-mail</label>
+            <input class="field" type="email" placeholder="Ваш e-mail" name="subscription-email" id="subscription-email" required>
+            <button class="button" type="submit">Подписаться</button>
           </form>
-        </div>
       </section>
     </main>
 
     <footer class="page-footer" data-test="footer">
-      <div class="footer-social">
+      <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети: следуйте за нами</h2>
-        <uL class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="https://vk.com/htmlacademy" target="_blank"
+        <uL class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="https://vk.com/htmlacademy" target="_blank"
               title="Группа вконтакте htmlacademy">
               <span class="visually-hidden">Ссылка для перехода в группу Vkontakte</span>
-              <img src="#" alt="vk-icon">
             </a>
           </li>
 
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="https://t.me/htmlacademy" target="_blank" title="Телеграм канал htmlacademy">
+          <li class="social-item">
+            <a class="social-button" href="https://t.me/htmlacademy" target="_blank" title="Телеграм канал htmlacademy">
               <span class="visually-hidden">Ссылка для перехода в канал Telegram</span>
-              <img src="#" alt="tg-icon">
             </a>
           </li>
 
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+          <li class="social-item">
+            <a class="social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
               title="Ютуб канал htmlacademy">
               <span class="visually-hidden">Ссылка для перехода в канал Youtube</span>
-              <img src="#" alt="yt-icon">
             </a>
           </li>
           </uL>
 
-        <div class="footer-contacts-number">
           <a class="footer-number" href="tel:88128121212">+7 (812) 812-12-12</a>
-        </div>
 
-        <div class="footer-contact-logo">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="contact-logo" src="#" width="115" height="33" alt="Логотип htmlacademy">
             <span class="visually-hidden">Переход на сайт HTML Academy</span>
           </a>
-        </div>
-      </div>
+      </section>
     </footer>
   </body>
 
