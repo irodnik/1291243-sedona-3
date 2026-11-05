@@ -1,0 +1,430 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("..fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("..fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.navigation {
+  color: #000000;
+  background: #ffffff;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.search-icon {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icons-top/search-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.favorite-icon {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/icons-top/heart-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.favorite-number {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  background-color: #7db54f;
+  border-radius: 20px;
+  padding: 3px;
+  margin: 10px;
+}
+
+.nav-list-link  {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.navigation-link-user {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.desired-icon {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  color:#000000;
+}
+
+.hero {
+  color:#ffffff;
+  background-color: #283d44;
+  background-image: url("../images/backgrounds/index-background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.advantages-block {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+}
+
+.adventages-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+}
+
+.adventages-explanation {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-list {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+
+.advantages-item {
+ background-color: #f0f5f9;
+}
+
+.pictures {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  color:#333333;
+}
+
+.light-blue {
+  background-color: #e6f0f6;
+}
+
+.advantages-block-welcome {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+.header-block-two {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  word-wrap: break-word;
+}
+
+.description-block {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.services-home {
+  content: "";
+  display: inline-block;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/house-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.services-food {
+  content: "";
+  display: inline-block;
+  width: 74px;
+  height: 70px;
+  background-image: url("../images/burger-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services-souvenir {
+  content: "";
+  display: inline-block;
+  width: 64px;
+  height: 76px;
+  background-image: url("../images/present-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services-header {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.services-color {
+  background-color: #f0f5f9;
+}
+
+.services-name {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 28px;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+}
+
+.services-description {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.booking {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+.booking-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  word-wrap: break-word;
+  margin-bottom: 20px;;
+}
+
+.booking-description {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
+  margin-bottom: 54px;
+}
+
+.button-search {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  word-wrap: break-word;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscription {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
+  background-image: url("../images/backgrounds/subscripe-bac.jpg");
+  background-color: #283d44;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.subscription-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.subscription-description {
+  margin-bottom: 54px;
+}
+
+input {
+  width: 452px;
+}
+
+.field {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-family: PT Sans;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+  padding: 12px 20px;
+  margin: 0;
+}
+
+.button-sub {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.page-footer {
+text-align: center;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-button-vk {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 14px;
+  background-image: url("../images/icons-bottom/vk-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social-button-tme {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  background-image: url("../images/icons-bottom/telegram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social-button-youtube {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  background-image: url("../images/icons-bottom/youtube.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer-number {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+a.htmlacademy-link::before {
+  content: "";
+  display: inline-block;
+  width: 115px;
+  height: 33px;
+  margin-left: 200px;
+  background-image: url("../images/logo-html-academy.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
