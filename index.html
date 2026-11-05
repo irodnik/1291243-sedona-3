@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Городок в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
-    <header class="navigation" data-test="header">
+    <header class="navigation">
       <a class="navigation-logo">
-        <img class="logo-site" src="images/logo.svg" alt="Логотип гостиниц города «Седона»" width="140" height="70">
+        <img class="logo-site" src="images/logo.svg" width="140" height="70" alt="Логотип гостиниц города «Седона»">
       </a>
       <nav class="nav">
         <ul class="nav-list">
@@ -42,8 +43,8 @@
       </nav>
     </header>
 
-    <main class="main" data-test="main">
-      <section class="hero" data-test="hero">
+    <main class="main">
+      <section class="hero">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</h1>
         <img class="main-text" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona">
       </section>
@@ -52,7 +53,7 @@
         <p class="adventages-explanation adventages-color">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
-      <section class="advantages" data-test="advantages">
+      <section class="advantages">
          <h2 class="visually-hidden">Преимущества</h2>
          <ul class="advantages-list">
           <li class="advantages-item pictures">
@@ -95,16 +96,16 @@
 
       <div class="services">
         <ul class="services-list">
-          <li class="services-item light-blue">
-              <h3 class="services-name">Жильё</h3>
+          <li class="services-item services-color">
+              <h3 class="services-header services-home">Жильё</h3>
               <p class="services-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="services-item">
-              <h3 class="services-name">Еда</h3>
+              <h3 class="services-header services-food">Еда</h3>
               <p class="services-description">Всегда заказывайте<br>топовый фирменный бургер,<br> вы не разочаруетесь!</p>
           </li>
-          <li class="services-item light-blue">
-              <h3 class="services-name">Сувениры</h3>
+          <li class="services-item services-color">
+              <h3 class="services-header services-souvenir">Сувениры</h3>
               <p class="services-description">Не только китайского,<br>но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -113,7 +114,7 @@
       <section class="booking" data-test="search">
         <h2 class="booking-title">Заинтересовались?</h2>
         <p class="booking-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="subscription" data-test="subscribe">
@@ -122,7 +123,7 @@
           <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="subscription-email">введите Ваш e-mail</label>
             <input class="field" type="email" placeholder="Ваш e-mail" name="subscription-email" id="subscription-email" required>
-            <button class="button" type="submit">Подписаться</button>
+            <button class="button-sub" type="submit">Подписаться</button>
           </form>
       </section>
     </main>
@@ -132,20 +133,20 @@
         <h2 class="visually-hidden">Социальные сети: следуйте за нами</h2>
         <uL class="social-list">
           <li class="social-item">
-            <a class="social-button" href="https://vk.com/htmlacademy" target="_blank"
+            <a class="social-button-vk" href="https://vk.com/htmlacademy" target="_blank"
               title="Группа вконтакте htmlacademy">
               <span class="visually-hidden">Ссылка для перехода в группу Vkontakte</span>
             </a>
           </li>
 
           <li class="social-item">
-            <a class="social-button" href="https://t.me/htmlacademy" target="_blank" title="Телеграм канал htmlacademy">
+            <a class="social-button-tme" href="https://t.me/htmlacademy" target="_blank" title="Телеграм канал htmlacademy">
               <span class="visually-hidden">Ссылка для перехода в канал Telegram</span>
             </a>
           </li>
 
           <li class="social-item">
-            <a class="social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+            <a class="social-button-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
               title="Ютуб канал htmlacademy">
               <span class="visually-hidden">Ссылка для перехода в канал Youtube</span>
             </a>
