@@ -6,25 +6,23 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-
     <header class="navigation" data-test="header">
-      <a class="navigation-logo">
-        <img class="logo-site" src="images/logo.svg" width="140" height="70" alt="Логотип гостиниц города «Седона»">
-      </a>
       <nav class="nav">
-        <ul class="nav-list">
+        <a class="navigation-logo">
+          <img class="logo-site" src="images/logo.svg" width="140" height="70" alt="Логотип гостиниц города «Седона»">
+        </a>
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="nav-list-link current-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="nav-list-link" href="index.html">О Седоне</a>
+            <a class="nav-list-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="nav-list-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-
-        <ul class="nav-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link-user search-icon" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -37,13 +35,14 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-user desired-button" href="#">Хочу сюда!</a>
+            <a class="navigation-link-user desired-icon" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main" data-test="main">
+    <main class="main-container" data-test="main">
+      <div class="page-container">
       <div class="top-search-area">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -113,13 +112,17 @@
 
             <fieldset class="catalog-filter filter-price">
               <legend class="catalog-filter-title">Стоимость, <span>₽:</span></legend>
-              <label for="price-from">от</label>
-              <input class="field-from" type="number" name="price-from" id="price-from" value="0">
-              <label for="price-to">до</label>
-              <input class="field-to" type="number" name="price-to" id="price-to" value="9000">
+              <div class="fieldset_catalog-filter">
+                <label for="price-from" class="price-from_input-label">от</label>
+                <input class="field-from" type="number" name="price-from" id="price-from" value="0" placeholder=" ">
+                <label for="price-to" class="price-to_input-label">до</label>
+                <input class="field-to" type="number" name="price-to" id="price-to" value="9000" placeholder=" ">
+              </div>
             </fieldset>
-            <button class="button-filters button-apply" type="submit">Применить</button>
-            <button class="button-filters button-reset" type="reset">Сбросить</button>
+            <div class="button-filters-area">
+              <button class="button-filters button-apply" type="submit">Применить</button>
+              <button class="button-filters button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
@@ -161,14 +164,20 @@
               <img class="product-img" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Пещера с видом на звёзды">
               <div class="card-container">
                 <h3 class="product-title">Amara Resort &amp; Spa</h3>
-                <span class="type">Гостиница</span>
-                <p class="product-price">От 4000 ₽</p>
-                <a class="product-link-details" href="#">Подробнее</a>
-                <button class="add-to-favorites" type="button">В избранное</button>
-                <p class="catalog-hotel-stars four-stars">
-                  <span class="visually-hidden">4 звезды</span>
-                </p>
-                <p class="catalog-hotel-raiting">Рейтинг: 8,5</p>
+                <div class="type_price">
+                  <span class="type">Гостиница</span>
+                  <p class="product-price">От 4000 ₽</p>
+                </div>
+                <div class="product-link-details_add-to">
+                  <a class="product-link-details" href="#">Подробнее</a>
+                  <button class="add-to-favorites" type="button">В избранное</button>
+                </div>
+                <div class="catalog-hotel-stars_raiting">
+                  <p class="catalog-hotel-stars four-stars">
+                    <span class="visually-hidden">4 звезды</span>
+                  </p>
+                  <p class="catalog-hotel-raiting">Рейтинг: 8,5</p>
+                </div>
               </div>
             </li>
 
@@ -176,14 +185,20 @@
               <img class="product-img" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="гостиница с видом на гору Дьявола">
               <div class="card-container">
                 <h3 class="product-title">Villas at Poco Diablo</h3>
-                <span class="type">Гостиница</span>
-                <p class="product-price">От 5000 ₽</p>
-                <a class="product-link-details" href="#">Подробнее</a>
-                <button class="add-to-favorites" type="button">В избранном</button>
-                <p class="catalog-hotel-stars four-stars">
-                  <span class="visually-hidden">4 звезды.</span>
-                </p>
-                <p class="catalog-hotel-raiting">Рейтинг: 9,2</p>
+                <div class="type_price">
+                  <span class="type">Гостиница</span>
+                  <p class="product-price">От 5000 ₽</p>
+                </div>
+                <div class="product-link-details_add-to">
+                  <a class="product-link-details" href="#">Подробнее</a>
+                  <button class="add-to-favorites" type="button">В избранное</button>
+                </div>
+                <div class="catalog-hotel-stars_raiting">
+                  <p class="catalog-hotel-stars four-stars">
+                    <span class="visually-hidden">4 звезды</span>
+                  </p>
+                  <p class="catalog-hotel-raiting">Рейтинг: 9,2</p>
+                </div>
               </div>
             </li>
 
@@ -191,14 +206,20 @@
               <img class="product-img" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="гостиница с видом на пустынный горный пейзаж">
               <div class="card-container">
                 <h3 class="product-title">Desert Quail Inn</h3>
-                <span class="type">Гостиница</span>
-                <p class="product-price">От 2500 ₽</p>
-                <a class="product-link-details" href="#">Подробнее</a>
-                <button class="add-to-favorites" type="button">В избранное</button>
-                <p class="catalog-hotel-stars three-stars">
-                  <span class="visually-hidden">3 звезды.</span>
-                </p>
-                <p class="catalog-hotel-raiting">Рейтинг: 6,9</p>
+                <div class="type_price">
+                  <span class="type">Гостиница</span>
+                  <p class="product-price">От 2500 ₽</p>
+                </div>
+                <div class="product-link-details_add-to">
+                  <a class="product-link-details" href="#">Подробнее</a>
+                  <button class="add-to-favorites" type="button">В избранное</button>
+                </div>
+                <div class="catalog-hotel-stars_raiting">
+                  <p class="catalog-hotel-stars four-stars">
+                    <span class="visually-hidden">3 звезды</span>
+                  </p>
+                  <p class="catalog-hotel-raiting">Рейтинг: 6,9</p>
+                </div>
               </div>
             </li>
 
@@ -206,20 +227,29 @@
               <img class="product-img" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="гостиница с видом на Гигантское древо">
               <div class="card-container">
                 <h3 class="product-title">GreenTree Inn</h3>
-                <span class="type">Гостиница</span>
-                <p class="product-price">От 1500 ₽</p>
-                <a class="product-link-details" href="#">Подробнее</a>
-                <button class="add-to-favorites" type="button">В избранное</button>
-                <p class="catalog-hotel-stars two-stars">
-                  <span class="visually-hidden">2 звезды.</span>
-                </p>
-                <p class="catalog-hotel-raiting">Рейтинг: 5,0</p>
+                <div class="type_price">
+                  <span class="type">Гостиница</span>
+                  <p class="product-price">От 1500 ₽</p>
+                </div>
+                <div class="product-link-details_add-to">
+                  <a class="product-link-details" href="#">Подробнее</a>
+                  <button class="add-to-favorites" type="button">В избранное</button>
+                </div>
+                <div class="catalog-hotel-stars_raiting">
+                  <p class="catalog-hotel-stars four-stars">
+                    <span class="visually-hidden">2 звезды</span>
+                  </p>
+                  <p class="catalog-hotel-raiting">Рейтинг: 5,0</p>
+                </div>
               </div>
             </li>
           </ul>
         </section>
 
+        <hr class="devider">
+
         <section class="pagination-block">
+
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link link-current" href="#" aria-current="page">1</a>
@@ -233,7 +263,7 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-more">
               <span>...</span>
             </li>
             <li class="pagination-item">
@@ -251,6 +281,7 @@
             <button class="button-sub" type="submit">Подписаться</button>
           </form>
         </section>
+      </div>
     </main>
 
     <footer class="page-footer" data-test="footer">
@@ -284,5 +315,4 @@
       </section>
     </footer>
   </body>
-
 </html>
